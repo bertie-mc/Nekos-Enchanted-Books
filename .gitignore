@@ -1,60 +1,30 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
+# --- Build / Gradle ---
+build/
+out/
+.gradle/
+
+# --- Run directories ---
+run/
+runs/
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.settings/
 .classpath
 .project
+eclipse/
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-
-# gradle
-build
-.gradle
-
-# other
-eclipse
-run
-.vscode
-logs
-
-# Files from Forge MDK
-forge*changelog.txt
-
-### macOS ###
-# General
+# --- OS cruft ---
 .DS_Store
-.AppleDouble
-.LSOverride
+Thumbs.db
 
-# Icon must end with two \r
-Icon
+# --- Third-party jars we must NOT redistribute ---
+libs/
 
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### macOS Patch ###
-# iCloud generated files
-*.icloud
+# --- Local decompiled / reference material (never publish) ---
+**/extracted/
+**/*-decompile/
+**/slag-decompile/
+**/decompiled-src/
