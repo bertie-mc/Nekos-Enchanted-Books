@@ -1,13 +1,19 @@
 # Neko's Enchanted Books (NeoForge)
 
-A NeoForge 1.21.1 port of **Neko's Enchanted Books**: gives enchanted books a unique texture per enchantment.
+Gives enchanted books a unique texture per enchantment. Independent NeoForge 1.21.1 port of **Neko's Enchanted Books** by Infernal Studios, reworked to wrap the enchanted-book model via NeoForge ModelEvents instead of Forge JS coremods. Client-side only.
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
 - **Mod ID:** `nebs`
 
-Port of **Neko's Enchanted Books** by Infernal Studios (Nekomaster, CGessinger, Jonathing). This is an independent NeoForge reimplementation; the original mod and its assets belong to their authors.
+## Install
+Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1.
 
-## License / attribution
+## Credits / Integration
+Port of **Neko's Enchanted Books** by Infernal Studios (Nekomaster, CGessinger, Jonathing). This is an independent NeoForge reimplementation, published as a public GitHub fork with attribution; the original mod and its assets belong to their authors.
 
-> **Licensing pending.** This is an independent NeoForge port/reimplementation of a third-party mod, kept in a **private** repository. It is **not for redistribution** until the original author's licensing terms are confirmed. All original code and assets belong to their respective authors (see attribution above).
+## Building
+`./gradlew build` — the built JAR is written to `build/libs/`.
+
+## License
+This is an independent NeoForge port/reimplementation of a third-party mod. The upstream project has no explicit open-source license, so this port is shared publicly as an attributed fork rather than under a declared license. All original code and assets belong to their respective authors (see attribution above).
