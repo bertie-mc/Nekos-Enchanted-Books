@@ -1,0 +1,28 @@
+LICENSING — READ BEFORE REUSING
+
+This repository is a fork of **infernalstudios/Nekos-Enchanted-Books**. The
+`main` branch is untouched upstream history; the `neoforge` branch carries
+berlord's independent NeoForge 1.21.1 port on top of it.
+
+**The upstream repository publishes no licence file.** Under copyright law the
+default in that situation is all rights reserved: no permission to copy,
+modify or redistribute is granted by the absence of a licence.
+
+Consequences:
+
+- This repository is **not** dedicated to the public domain and is **not**
+  covered by The Unlicense, unlike most other bertie-mc repositories. It
+  cannot be, because the underlying work is not ours to relicense.
+- Anyone wishing to reuse, redistribute or build on this port should seek
+  permission from Infernal Studios for the upstream work first.
+
+CONTRIBUTIONS BY berlord
+
+To the extent berlord holds copyright in the port work specifically, he
+asserts no additional restriction over it beyond whatever the upstream terms
+require. That does not grant you rights to the upstream work.
+
+THIRD-PARTY DEPENDENCIES
+
+Minecraft and NeoForge remain under their own licences and are not
+redistributed here.
