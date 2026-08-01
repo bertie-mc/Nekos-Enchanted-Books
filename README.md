@@ -15,5 +15,11 @@ Port of **Neko's Enchanted Books** by Infernal Studios (Nekomaster, CGessinger, 
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`.
 
+## Tests
+
+`gradle test` verifies that every enchantment mapping resolves to a valid model and
+texture. `gradle clientTestJar` builds a test-only mod that checks the enchanted-book
+model replacement in a headless client; it is excluded from releases.
+
 ## License
 This is an independent NeoForge port/reimplementation of a third-party mod. The upstream project has no explicit open-source license, so this port is shared publicly as an attributed fork rather than under a declared license. All original code and assets belong to their respective authors (see attribution above).

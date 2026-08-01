@@ -58,7 +58,7 @@
   "l2complements:cubic_mining": "nebs:item/ensorcellation/excavating",
   "l2complements:cursed_blade": "nebs:item/allurement/spread_of_ailments",
   "l2complements:dampened": "nebs:item/domesticationinnovation/muffled",
-  "l2complements:ender_transport": "nebs:item/majruszsenchantments/telekinesis",
+  "l2complements:ender_transport": "nebs:item/l2complements/ender_mask",
   "l2complements:eternal": "nebs:item/forbidden_arcanus/indestructible",
   "l2complements:fire_immunity": "nebs:item/domesticationinnovation/fireproof",
   "l2complements:freezing_blade": "nebs:item/ensorcellation/frost_aspect",

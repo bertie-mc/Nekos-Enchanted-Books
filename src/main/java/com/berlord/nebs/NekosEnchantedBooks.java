@@ -20,16 +20,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 
-/**
- * NeoForge 1.21.1 port of Neko's Enchanted Books (Infernal Studios).
- *
- * <p>Upstream wraps the vanilla enchanted-book {@code ItemOverrides} via Forge JS coremods, which
- * NeoForge no longer supports. This port reproduces that behaviour with NeoForge's model events:
- * the per-enchantment models are side-loaded in {@link ModelEvent.RegisterAdditional}, then the
- * baked {@code minecraft:enchanted_book#inventory} model is swapped for {@link NebsBakedModel} in
- * {@link ModelEvent.ModifyBakingResult}. Mapping (including upstream's texture-reuse aliases) is
- * data-driven from {@code assets/nebs/nebs_books.json}. Client-side only.
- */
+/** Installs data-driven per-enchantment models for enchanted books. */
 @Mod(value = NekosEnchantedBooks.MOD_ID, dist = Dist.CLIENT)
 public final class NekosEnchantedBooks {
     public static final String MOD_ID = "nebs";
@@ -38,7 +29,6 @@ public final class NekosEnchantedBooks {
     private static final ModelResourceLocation ENCHANTED_BOOK =
             ModelResourceLocation.inventory(ResourceLocation.withDefaultNamespace("enchanted_book"));
 
-    /** enchantment id -> per-enchant model location (e.g. {@code minecraft:sharpness -> nebs:item/minecraft/sharpness}). */
     private static final Map<ResourceLocation, ResourceLocation> ENCHANT_TO_MODEL = new HashMap<>();
 
     public NekosEnchantedBooks(IEventBus modBus) {
@@ -92,11 +82,11 @@ public final class NekosEnchantedBooks {
                     ResourceLocation model = ResourceLocation.parse(entry.getValue().getAsString());
                     map.put(enchant, model);
                 } catch (RuntimeException ignored) {
-                    // skip malformed entries, keep the rest
+                    // One bad optional-mod entry must not disable the rest of the index.
                 }
             }
         } catch (Exception ignored) {
-            // missing/unreadable index: leave books vanilla rather than crash
+            // Leave books vanilla if a resource pack supplies an unreadable index.
         }
         return map;
     }

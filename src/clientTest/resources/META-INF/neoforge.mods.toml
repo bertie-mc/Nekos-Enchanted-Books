@@ -1,0 +1,16 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All rights reserved"
+
+[[mods]]
+modId = "nebstest"
+version = "1"
+displayName = "Neko's Enchanted Books client tests"
+description = "Test-only assertions for Neko's Enchanted Books"
+
+[[dependencies.nebstest]]
+modId = "nebs"
+type = "required"
+versionRange = "[1,)"
+ordering = "AFTER"
+side = "CLIENT"
