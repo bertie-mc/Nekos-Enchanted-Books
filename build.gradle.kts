@@ -27,7 +27,7 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    mavenLocal()
+    mavenCentral()
 }
 
 base {

@@ -1,0 +1,19 @@
+format = "bertie-ci.component.v1"
+subject = "nebs"
+kind = "neoforge-mod"
+gradle-project = ":"
+mod-id = "nebs"
+
+[version]
+file = "gradle.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"
+
+[[suite]]
+id = "model-contract"
+runner = "client"
+build-client-test-mod = true
+require-log = ["NEBS_ENCHANTED_BOOK_MODEL_OK"]
